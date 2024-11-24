@@ -1,0 +1,101 @@
+html {font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+body {
+    background-color: rgb(3, 28, 61);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    transition: 1s;
+    animation: fade 2s ease-in-out;   
+    animation: slide 1s ease-in-outs;
+    animation-delay: .4s;
+    
+}
+.hi {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(144, 216, 255), 0 0 20px rgb(144, 216, 255), 0 0 500px rgb(144, 216, 255) ;
+
+}
+p{
+    
+    top: 15%;
+    color: rgb(3, 28, 61);
+} 
+.par1 {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(144, 216, 255, 0.295);
+   
+}
+.par2 {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.par3 {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.par4 {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.heart {
+    animation: glow .5s ease-in-out infinite;
+}
+
+
+
+.heart {
+   
+    width: 144px;
+    height: 80px;
+    position: absolute;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: rotate(45deg);
+    bottom: 20%;
+    right:50%;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(144, 216, 255), 0 0 50px rgb(144, 216, 255), 0 0 800px rgb(144, 216, 255) ;
+    transition: 1s;
+    cursor: pointer;
+    animation: glow 1s ease-in-out infinite;
+}
+
+.heart::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: rotate(90deg) translateY(80px);
+    transform-origin: right bottom;
+    transition: 1s;
+    cursor: pointer;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(144, 216, 255), 0 0 50px rgb(144, 216, 255), 0 0 800px rgb(144, 216, 255) ;
+}
+@keyframes slide {
+    from {transform: translateY(-100%); }
+    to   {transform: translateY(0); }
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
